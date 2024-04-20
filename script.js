@@ -14,7 +14,11 @@ const playerImage = new Image();
 
 // move: idle
 // 512 / 4 = 128
-playerImage.src = "./assets/Idle_2.png";
+// playerImage.src = "./assets/Idle_2.png";
+
+// move: hurt
+// 384 / 3 = 128
+playerImage.src = "./assets/Hurt.png";
 
 const playerWidth = 128;
 const playerHeight = 128;
