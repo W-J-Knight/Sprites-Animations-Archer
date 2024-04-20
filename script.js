@@ -7,8 +7,15 @@ const CANVAS_HEIGHT = (canvas.height = 600);
 
 // let playerImage = document.getElementById('player');
 const playerImage = new Image();
-playerImage.src = "./assets/Attack_1.png";
+
+// move: attack
 // 512 / 4 = 128
+// playerImage.src = "./assets/Attack_1.png";
+
+// move: idle
+// 512 / 4 = 128
+playerImage.src = "./assets/Idle_2.png";
+
 const playerWidth = 128;
 const playerHeight = 128;
 let frameX = 0;
