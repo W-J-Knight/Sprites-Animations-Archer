@@ -26,7 +26,11 @@ const playerImage = new Image();
 
 // move: other idle
 // 384 / 3 = 128
-playerImage.src = "./assets/Idle.png";
+// playerImage.src = "./assets/Idle.png";
+
+// move: other jump
+// 384 / 3 = 128
+playerImage.src = "./assets/Jump.png";
 
 const playerWidth = 128;
 const playerHeight = 128;
@@ -37,7 +41,7 @@ const staggerFrames = 5;
 
 function animate() {
   ctx.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
-  let position = Math.floor(gameFrame/staggerFrames) % 6;
+  let position = Math.floor(gameFrame/staggerFrames) % 9;
   // context.drawImage(img, sx, sy, swidth, sheight, x, y, width, height)
   ctx.drawImage(playerImage,playerWidth * position , playerHeight * frameY, playerWidth , playerHeight, 0, 0, CANVAS_WIDTH, CANVAS_HEIGHT)
 
