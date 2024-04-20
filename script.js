@@ -25,11 +25,11 @@ const playerImage = new Image();
 // playerImage.src = "./assets/Dead.png";
 
 // move: other idle
-// 384 / 3 = 128
+// 768 / 6 = 128
 // playerImage.src = "./assets/Idle.png";
 
 // move: other jump
-// 384 / 3 = 128
+// 1152 / 9 = 128
 playerImage.src = "./assets/Jump.png";
 
 const playerWidth = 128;
