@@ -20,12 +20,16 @@ const playerImage = new Image();
 // 384 / 3 = 128
 playerImage.src = "./assets/Hurt.png";
 
+// move: dying
+// 384 / 3 = 128
+playerImage.src = "./assets/Dead.png";
+
 const playerWidth = 128;
 const playerHeight = 128;
 let frameX = 0;
 let frameY = 0;
 let gameFrame = 0; 
-const staggerFrames = 8; 
+const staggerFrames = 40; 
 
 function animate() {
   ctx.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
