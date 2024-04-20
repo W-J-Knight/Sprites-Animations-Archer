@@ -34,11 +34,11 @@ const playerImage = new Image();
 
 // move: other run
 // 1152 / 9 = 128
-playerImage.src = "./assets/Run.png";
+// playerImage.src = "./assets/Run.png";
 
 // move: other shot-1
 // 1792 / 14 = 128
-playerImage.src = "./assets/Shot_1.png";
+// playerImage.src = "./assets/Shot_1.png";
 
 // move: other shot-2
 // 1664 / 13 = 128
