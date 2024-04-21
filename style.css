@@ -10,3 +10,22 @@
 #player{
     display: none;
 }
+
+.controls{
+    position: absolute;
+    z-index: 10;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.controls,section, option{
+    font-size: 25px;
+}
+#credits{
+    position: absolute;
+    z-index: 10;
+    bottom:80px;
+    left: 50%;
+    transform: translateX(-50%);
+}

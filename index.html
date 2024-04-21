@@ -3,12 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sprits Animations Archer</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
-    <!-- <img id="player" src="./assets/Attack_1.png" alt=""> -->
+    <div class="controls">
+        <label for="animations">Choose Animation:</label>
+        <select name="animations" id="animations">
+          <option value="idle">Idle</option>
+          <option value="waiting">Waiting</option>
+          <option value="walk">Walk</option>
+          <option value="run">Run</option>
+          <option value="jump">Jump</option>
+          <option value="hurt">Hurt</option>
+          <option value="attack">Attack</option>
+          <option value="verticalShot">Vertical Shot</option>
+          <option value="horizonalShot">Horizonal Shot</option>
+          <option value="dying">Dying</option>
+        </select>
+      </div>
     <canvas id="canvas1"></canvas>
+    <div id="credits">
+        <h3>Image: https://craftpix.net/</h3>
+        <h3>Learning to use sprits from: https://www.youtube.com/@Frankslaboratory</h3>
+    </div>
 </body>
 </html>
