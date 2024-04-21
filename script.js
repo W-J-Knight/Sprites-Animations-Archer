@@ -48,7 +48,7 @@ const movesOjectPlayer_1 = {
 }
 const player_1 = new Player(128, 128, movesOjectPlayer_1, "run")
 
-player_1.defaultMove = "waiting"
+player_1.defaultMove = "idle"
 const dropdown = document.getElementById('animations')
 dropdown.addEventListener('change', function(e){
   player_1.defaultMove  = e.target.value;
