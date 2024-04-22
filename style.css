@@ -1,31 +1,79 @@
-#canvas1{
-    border: 5px solid black;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 600px;
-    height: 600px;
-}
-#player{
-    display: none;
+#canvas1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
 }
 
-.controls{
-    position: absolute;
-    z-index: 10;
-    top: 20%;
-    left: 50%;
-    transform: translateX(-50%);
+.controls {
+  position: absolute;
+  z-index: 10;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.controls,section, option{
-    font-size: 25px;
+.controls,
+section,
+option {
+  font-size: 25px;
 }
-#credits{
-    position: absolute;
+#credits {
+  position: absolute;
+  z-index: 10;
+  top: 85vh;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 720px) {
+  #canvas1 {
+    top: 40%;
+    width: 320px;
+    height: 320px;
+    border: none;
+  }
+
+  .controls {
+    top: 10%;
+    left: 5%;
+    transform: translateX(0);
+  }
+
+  .controls,
+  section,
+  option {
+    font-size: 15px;
+  }
+
+  #credits {
+    width: 40%;
     z-index: 10;
-    bottom:80px;
-    left: 50%;
-    transform: translateX(-50%);
+    font-size: 10px;
+    top: 80vh;
+    left: 5%;
+    transform: translateX(0);
+  }
+}
+@media (max-height: 600px) {
+  #canvas1 {
+    top: 30%;
+    left: 70%;
+  }
+
+  .controls {
+    top: 8%;
+    left: 30%;
+  }
+
+  #credits {
+    width: 25%;
+    z-index: 10;
+    font-size: 12px;
+    bottom: 90px;
+    left: 25%;
+    top: 60vh;
+  }
 }
